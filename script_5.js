@@ -53,3 +53,22 @@ function coinCounter(){
 }
 
 coinCounter()
+
+function sixThousands(ensemble){
+	let nb = 0;
+
+	console.log("les cryptos dont le cours est inferieur a 6000 sont:");
+	Object.entries(ensemble).forEach(function([key, value]) {
+			if (value < 6000) {
+					console.log(key);
+					nb++;
+			}
+	});
+	
+	return nb;
+}
+
+sixThousands()
+console.log("Ils sont au nombre de:", less_than_six_thousand(ensemble));
+
+
