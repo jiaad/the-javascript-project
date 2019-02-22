@@ -50,7 +50,7 @@ underscoreSearcher()
 // Trie la liste de handles par ordre alphabétique.
 function sortByName() {
   let sorting = journaliste.sort()
-console.log(sorting)
+console.log("par ordre alpha     " + sorting)
 }
 sortByName()
 
