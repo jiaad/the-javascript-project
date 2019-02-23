@@ -27,7 +27,7 @@ let ageCal = entrepreneurs.map(a=>  ` ${a.first} ${a.last} is ${ new Date().getF
 console.log(ageCal);
 
 
-let trier = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last, 'en', {'sensitivity': 'base'}))
+//let trier = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last, 'en', {'sensitivity': 'base'}))
 let trier =  entrepreneurs.sort(function(a, b) {  return  a.last.localeCompare(b.last); });
 console.log(trier);
 
