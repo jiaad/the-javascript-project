@@ -44,15 +44,13 @@ console.log("****************************************")
 console.log("VOICI NOTRE HASH TRIER PAR COURS DESCENDANT")
 console.log(laPlusPetiteValeur(ensemble));
 
-
-function coinCounter(){
-  let r =/\b(\w*coin\w*)\b/i;
-  
-  let poto = bitCoin.filter((a) => a.match(r)).length
-  console.log("Coin length::::::"+poto)
+function countCoin(){
+  var counter = []
+  Object.keys(fusion).forEach((k)=>{ counter.push(k) })
+  let coinCount = counter.filter(a=> a.match(/coin/i)).length
+  console.log(`the number of coin word is : ====  ${coinCount} ==== and it's case insensitive`)
 }
-
-coinCounter()
+  countCoin()
 
 function sixThousands(ensemble){
 	let nb = 0;
