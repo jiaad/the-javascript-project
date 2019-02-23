@@ -13,6 +13,27 @@ const entrepreneurs = [
   { first: 'Peter', last: 'Thiel', year: 1967 }
 ];
 
+
+
+//====================== PLUS FACILE ========================================
+
+let bornSeventies = entrepreneurs.filter(a => a.year>= 1970 && a.year <= 1980)
+console.log(bornSeventies)
+
+let fusionDeName = entrepreneurs.map(a => a.first + ' ' + a.last)
+console.log(fusionDeName);
+
+let ageCal = entrepreneurs.map(a=>  ` ${a.first} ${a.last} is ${ new Date().getFullYear()  - a.year} years old`)
+console.log(ageCal);
+
+
+let trier = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last, 'en', {'sensitivity': 'base'}))
+let trier =  entrepreneurs.sort(function(a, b) {  return  a.last.localeCompare(b.last); });
+console.log(trier);
+
+
+
+//======================= PLUS DIFFICILE ====================================
 // Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70
 function borSeventies() {
   seventies = []
